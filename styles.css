@@ -1,10 +1,26 @@
+:root {
+    --dark-color: #000014;
+    --light-color: #fafafa;
+    --accent-color: #e0ac1e;
+
+}
+
 html {
-    background: #000014;
+    background: var(--dark-color);
     font-family: 'Inclusive Sans', sans-serif;
-    color: #fafafa;
+    color: var(--light-color);
 
 }
 
 .title{
     margin: auto;
+}
+
+a {
+    color: var(--light-color);
+    transition: color 1s;
+}
+
+a :hover {
+    color: var(--accent-color);
 }
