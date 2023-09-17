@@ -11,10 +11,10 @@
     <title>Daniel Gayón Seguí</title>
 </head>
 <body>
-    <div id="response-div"></div>
     <div>
-        <a hx-get="home.html" hx-target="#response-div" hx-swap="outerHTML">Home</a>
-        <a hx-get="about.html" hx-target="#response-div" hx-swap="outerHTML">About</a>
+        <a hx-get="home.html" hx-target="#response-div" hx-swap="innerHTML" class="button">Home</a>
+        <a hx-get="about.html" hx-target="#response-div" hx-swap="innerHTML" class="button">About</a>
     </div>
+    <div id="response-div"></div>
 </body>
 </html>
