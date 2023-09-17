@@ -7,12 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/htmx.org@1.9.5"></script>
     <title>Daniel Gayón Seguí</title>
 </head>
 <body>
-    <h1 class="title main">Hello World</h1>
     <div>
-        <a href="about.html">About</a>
+        <a hx-post="/home" hx-target="#response-div" hx-swap="innerHTML">Home</a>
+        <a hx-post="/about" hx-target="#response-div" hx-swap="innerHTML">About</a>
     </div>
+    <div id="response-div" hx-get="/home"></div>
 </body>
 </html>
