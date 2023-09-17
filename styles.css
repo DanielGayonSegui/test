@@ -9,31 +9,32 @@ html {
     background: var(--dark-color);
     font-family: 'Inclusive Sans', sans-serif;
     color: var(--light-color);
+}
 
+body {
+    margin: 0;
 }
 
 .title{
     margin: auto;
 }
 
-a {
-    color: var(--light-color);
-    transition: color 1s;
-}
-
-a:hover {
-    color: var(--accent-color);
-}
-
 .button {
-    width: 50px;
-    height: 25px;
-    padding: 0 5px;
-    border-radius: 5px;
+    width: 75px;
+    height: 50px;
+    margin: 0 1px;
+    padding: 0;
+    border: none;
     background-color: var(--accent-color);
-    transition: background-color 1s;
+    color: var(--light-color);
+    transition: background-color 1s, color 1s;
 }
 
 .button:hover {
     background-color: var(--light-color);
+    color: var(--accent-color);
+}
+
+.content {
+    margin: 2px;
 }
