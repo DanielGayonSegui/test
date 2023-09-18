@@ -7,10 +7,9 @@
 }
 
 html {
-    background: var(--dark-color);
-    background: radial-gradient(circle, var(--dark2-color) 0%, var(--dark-color) 100%);
+    background: var(--light-color);
     font-family: 'Inclusive Sans', sans-serif;
-    color: var(--light-color);
+    color: var(--dark2-color);
 }
 
 body {
