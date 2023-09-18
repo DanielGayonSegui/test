@@ -12,11 +12,11 @@
 </head>
 <body>
     <div class="nav">
-        <button hx-get="home.html" hx-target="#response-div" hx-swap="innerHTML" class="button">HOME</button>
-        <button hx-get="about.html" hx-target="#response-div" hx-swap="innerHTML" class="button">ABOUT</button>
+        <button hx-get="home.html" hx-target="#response-div" hx-swap="innerHTML transition=true" class="button">HOME</button>
+        <button hx-get="about.html" hx-target="#response-div" hx-swap="innerHTML transition=true" class="button">ABOUT</button>
         <div class="button filler"></div>
     </div>
-    <div id="response-div" class="content">
+    <div id="response-div" class="content slide-it">
         <h1 class="title">Home</h1>
         <div class="info">
             <p>
