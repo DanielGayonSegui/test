@@ -18,6 +18,7 @@ body {
 
 .title{
     margin: auto;
+    align-self: center;
 }
 
 .nav {
@@ -46,7 +47,7 @@ body {
 }
 
 .content {
-    display: absolute;
+    display: flex;
     margin: 2px;
     width: 99%;
     height: 90vh;
