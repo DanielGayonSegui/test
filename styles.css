@@ -74,6 +74,8 @@ body {
 
 .nav {
     display: flex;
+    position: fixed;
+    width: 100vw;
 }
 
 .button {
@@ -100,7 +102,7 @@ body {
 .content {
     display: flex;
     flex-flow: row wrap;
-    margin: 2px;
-    width: 99%;
-    height: 90vh;
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
 }
