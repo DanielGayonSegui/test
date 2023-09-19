@@ -79,7 +79,7 @@ body {
 }
 
 .button {
-    width: 75px;
+    min-width: 10%;
     height: 50px;
     margin: 0 1px;
     padding: 0;
