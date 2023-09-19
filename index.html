@@ -12,17 +12,19 @@
 </head>
 <body>
     <div class="nav">
-        <button hx-get="home.html" hx-target="#response-div" hx-swap="outerHTML swap:1s" class="button">HOME</button>
-        <button hx-get="about.html" hx-target="#response-div" hx-swap="outerHTML swap:1s" class="button">ABOUT</button>
-        <button hx-get="test.html" hx-target="#response-div" hx-swap="outerHTML swap:1s" class="button">TEST</button>
+        <button hx-get="home.html" hx-target="#response-div" hx-swap="innerHTML swap:1s" class="button">HOME</button>
+        <button hx-get="about.html" hx-target="#response-div" hx-swap="innerHTML swap:1s" class="button">ABOUT</button>
+        <button hx-get="test.html" hx-target="#response-div" hx-swap="innerHTML swap:1s" class="button">TEST</button>
         <div class="button filler"></div>
     </div>
-    <div id="response-div" class="content fade-out">
-        <h1 class="title slide">Home</h1>
-        <div class="info fade-in-1s-delay">
-            <p>
-            Welcome to my page
-            </p>
+    <div id="response-div">
+        <div  class="content fade-out">
+            <h1 class="title slide">Home</h1>
+            <div class="info fade-in-1s-delay">
+                <p>
+                Welcome to my page
+                </p>
+            </div>
         </div>
     </div>
 </body>
