@@ -79,7 +79,8 @@ body {
 }
 
 .button {
-    min-width: 10%;
+    width: 10%;
+    min-width: fit-content;
     height: 50px;
     margin: 0 1px;
     padding: 0;
