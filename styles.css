@@ -3,7 +3,6 @@
     --dark2-color: #141414;
     --light-color: #fafafa;
     --accent-color: #e0ac1e;
-
 }
 
 @keyframes fade-in {
@@ -36,7 +35,7 @@ body {
 }
 
 .title{
-    margin:  auto;
+    margin: auto;
     width: 50%;
     min-width: fit-content;
     align-self: center;
