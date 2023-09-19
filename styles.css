@@ -75,6 +75,7 @@ body {
     display: flex;
     position: fixed;
     width: 100vw;
+    z-index: 99;
 }
 
 .button {
