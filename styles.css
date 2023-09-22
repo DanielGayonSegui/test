@@ -22,6 +22,8 @@ nav {
 }
 
 nav button {
+    overflow: hidden;
+    position: relative;
     width: 10%;
     min-width: fit-content;
     height: 50px;
@@ -30,6 +32,41 @@ nav button {
     border: none;
     background-color: transparent;
     color: var(--dark-color);
+}
+
+nav button::after {
+    content: '';
+    position: absolute;
+    inset-inline: 0;
+    inset-block-end: 0;
+    block-size: 3px;
+    background-color: var(--accent-color);
+
+    translate: var(--_tr, 0);
+    scale: var(--_sc, 0) 1;
+    transition: 
+        scale 100ms var(--sd, 0ms),
+        translate 200ms;
+}
+
+/* A previous sibling is hovered */ 
+nav button:hover ~ button {
+    --_tr: -100%;
+    --_sd: 200ms;
+}
+
+/* Any other sibling is hovered */ 
+nav button:hover {
+    --_tr: 100%;
+    --_sd: 200ms;
+}
+
+/* The actually hovered <button> 
+ * NOTE: Has to go after the previous selector */
+nav button:hover {
+    --_sc: 1;
+    --_tr: 0;
+    --_sd: 0ms;
 }
 
 .title{
