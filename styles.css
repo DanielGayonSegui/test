@@ -27,7 +27,7 @@ nav button {
     width: 10%;
     min-width: fit-content;
     height: 50px;
-    margin: 0 1px;
+    margin: 0;
     padding: 0;
     border: none;
     background-color: transparent;
@@ -45,7 +45,7 @@ nav button::after {
     translate: var(--_tr, 0);
     scale: var(--_sc, 0) 1;
     transition: 
-        scale 100ms var(--sd, 0ms),
+        scale 100ms var(--_sd, 0ms),
         translate 200ms;
 }
 
