@@ -21,6 +21,11 @@ nav {
     z-index: 99;
 }
 
+#logo {
+    height: 50px;
+    padding: 0 25px;
+}
+
 nav button {
     overflow: hidden;
     position: relative;
@@ -96,33 +101,9 @@ nav button:hover {
     padding-top: 25px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .filler {
-    margin: 0 1px;
+    margin: 0;
     width: 100%;
-}
-
-.button:hover {
-    background-color: var(--light-color);
-    color: var(--accent-color);
 }
 
 .content {
