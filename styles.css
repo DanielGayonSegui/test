@@ -1,74 +1,17 @@
 :root {
-    --dark-color: #000014;
-    --dark2-color: #141414;
-    --light-color: #fafafa;
-    --accent-color: #e0ac1e;
-}
-
-@keyframes fade-in {
-     0% { opacity: 0; }
-     100% { opacity: 100; }
-
-}
-
-@keyframes fade-out {
-    to { opacity: 0; }
-}
-
-@keyframes slide-to-left {
-    0% { transform: translateX(50%); }
-    100% { transform: translateX(0); }
-}
-
-@keyframes slide-from-right {
-    from { transform: translateX(90px); }
+    --dark-color: #141414;
+    --light-color: #f8e3ef;
+    --accent-color: #b23d8e;
 }
 
 html {
     background: var(--light-color);
     font-family: 'Inclusive Sans', sans-serif;
-    color: var(--dark2-color);
+    color: var(--dark-color);
 }
 
 body {
     margin: 0
-}
-
-.title{
-    margin: auto;
-    width: 50%;
-    min-width: fit-content;
-    align-self: center;
-    font-size: 127px;
-    text-align: right;
-}
-
-.slide {
-    animation: 1s ease-out 0s 1 slide-to-left;
-}
-
-.fade-out.htmx-swapping {
-    opacity: 0;
-    transition: opacity 1s ease-out;
-}
-
-.fade-in {
-    opacity: 0;
-    animation: 1s ease-out 0s 1 fade-in;
-    animation-fill-mode: forwards;
-}
-
-.fade-in-1s-delay {
-    opacity: 0;
-    animation: 1s ease-out 1s 1 fade-in;
-    animation-fill-mode: forwards;
-}
-
-.info {
-    width: 50%;
-    min-width: fit-content;
-    margin: auto;
-    padding-top: 25px;
 }
 
 nav {
@@ -85,10 +28,55 @@ nav button {
     margin: 0 1px;
     padding: 0;
     border: none;
-    background-color: var(--accent-color);
-    color: var(--light-color);
-    transition: background-color 1s, color 1s;
+    background-color: transparent;
+    color: var(--dark-color);
 }
+
+.title{
+    margin: auto;
+    width: 50%;
+    min-width: fit-content;
+    align-self: center;
+    font-size: 127px;
+    text-align: right;
+}
+
+.fade-out.htmx-swapping {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.fade-in-1s-delay {
+    opacity: 0;
+    animation: 1s ease-out 1s 1 fade-in;
+    animation-fill-mode: forwards;
+}
+
+.info {
+    width: 50%;
+    min-width: fit-content;
+    margin: auto;
+    padding-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .filler {
     margin: 0 1px;
@@ -106,10 +94,4 @@ nav button {
     margin: 0px;
     width: 100%;
     height: 100vh;
-}
-
-.p5Canvas {
-    display: flex;
-    padding-top: 50px;
-    margin: 0 auto;
 }
