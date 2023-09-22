@@ -71,14 +71,14 @@ body {
     padding-top: 25px;
 }
 
-.nav {
+nav {
     display: flex;
     position: fixed;
     width: 100vw;
     z-index: 99;
 }
 
-.button {
+nav button {
     width: 10%;
     min-width: fit-content;
     height: 50px;
