@@ -97,7 +97,7 @@ nav button:hover {
     animation: 1s linear 0s infinite alternate red;
 }
 
-.fade-out.htmx-swapping {
+/*.fade-out.htmx-swapping {
     opacity: 0;
     transition: opacity 1s ease-out;
 }
@@ -107,7 +107,7 @@ nav button:hover {
     animation: 1s ease-out 1s 1 fade-in;
     animation-fill-mode: forwards;
 }
-
+*/
 .content {
     display: flex;
     flex-flow: row wrap;
