@@ -7,7 +7,9 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Signika:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
   <script src="https://unpkg.com/htmx.org@1.9.5"></script>
   <title>Menorca Creadors</title>
 </head>
@@ -19,8 +21,12 @@
     <button hx-get="/pages/about.html" hx-target="#response-div" hx-swap="innerHTML swap:1s">Sobre Nosotros</button>
     <button hx-get="/pages/test.html" hx-target="#response-div" hx-swap="innerHTML swap:1s">Creadores de
       Contenido</button>
-    <button hx-get="/pages/game.html" hx-target="#response-div" hx-swap="innerHTML swap:1s">En Directo</button>
     <button class="button filler"></button>
+    <button hx-get="/pages/game.html" hx-target="#response-div" hx-swap="innerHTML swap:1s" class="left">En
+      Directo
+      <svg viewBox="0 0 39 39" xmlns="http://www.w3.org/2000/svg" width="50px" height="25px" class="rec">
+        <circle cx="50%" cy="50%" r="5" />
+      </svg></button>
   </nav>
   <div id="response-div" class="fade-out">
     <div class="content">
@@ -35,5 +41,16 @@
     </div>
   </div>
 </body>
+
+
+</html>
+
+</html>
+
+</html>
+
+</html>
+
+</html>
 
 </html>
