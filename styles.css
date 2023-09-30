@@ -125,6 +125,10 @@ nav button:hover {
     perspective: 1000px;
 }
 
+img {
+    max-width: 100%;
+}
+
 .content::after {
     content: "";
     position: absolute;
