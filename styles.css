@@ -132,7 +132,7 @@ img {
 .content::after {
     content: "";
     position: absolute;
-    background: url(source/bg.svg) center center no-repeat;
+ /*   background: url(source/bg.svg) center center no-repeat;*/
     background-size: 75%;
     z-index: 0;
     top: 0;
@@ -221,7 +221,7 @@ img {
     z-index: 10;
     height: 100%;
     object-fit: cover;
-    object-position: -150px center;
+    object-position: center;
 }
 
 .logo-image,
