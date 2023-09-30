@@ -4,6 +4,10 @@
     --accent-color: #b23d8e;
 }
 
+::-webkit-scrollbar { 
+display: none; 
+}
+
 html {
     background: var(--light-color);
     font-family: 'Signika', sans-serif;
