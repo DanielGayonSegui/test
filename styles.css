@@ -2,6 +2,8 @@
     --dark-color: #141414;
     --light-color: #f8e3ef;
     --accent-color: #b23d8e;
+    --timing: 400ms;
+    --rotation: 20deg;
 }
 
 ::-webkit-scrollbar { 
@@ -163,4 +165,12 @@ nav button:hover {
     width: 16ch;
     color: var(--light-color);
     font-size: 3rem;
+}
+
+.card {
+    width: 300px;
+    aspect-ratio: 9 / 16;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: rotate var(--timing) ease;
 }
