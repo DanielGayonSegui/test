@@ -223,12 +223,12 @@ img {
     width: 25%;
     margin-inline: auto;
     inset: auto 0 2rem;
-    transform: translateY(0rem) translateZ(20px);
+    transform: translateY(0rem) translateZ(54px);
     transition: var(--timing);
 }
 
 .card:hover .logo-image {
-    transform: translateY(-2rem) translateZ(20px);
+    transform: translateY(-2rem) translateZ(54px);
     rotate: x calc(var(--rotation)* -1);
 }
 
@@ -237,12 +237,12 @@ img {
     transform-origin: bottom;
     opacity: 0;
     z-index: 100;
-    transform: translateY(-50%);
+    transform: translateY(11rem);
     transition: var(--timing);
 }
 
 .card:hover .front-image {
     opacity: 1;
-    transform: translateY(-2rem) translateZ(-10px);
+    transform: translateY(11rem) translateZ(105px);
     rotate: x calc(var(--rotation) * -1);
 }
